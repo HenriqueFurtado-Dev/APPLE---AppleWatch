@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+[type=submit] {
+  cursor: pointer;
+}
+
+p {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #FAFAFA;
+}
+
+.container {
+  width: 1140px;
+  max-width: 1140px;
+  min-width: 1140px;
+  margin: auto;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #F3002D;
+  border: none;
+  font-weight: 600;
+  width: 200px;
+}
+.btn:hover {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-border {
+  padding: 15px 30px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: 600;
+  width: 200px;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 36px;
+  color: #F3002D;
+}
+
+@keyframes round {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid grey;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo img {
+  width: 60px;
+}
+header .container nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.banner {
+  padding: 120px 0;
+}
+.banner .container {
+  display: flex;
+}
+.banner .container .banner-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 100px;
+}
+.banner .container .banner-content img {
+  width: 300px;
+}
+.banner .container .banner-content h1 {
+  font-size: 84px;
+}
+.banner .container .banner-content p {
+  font-size: 18px;
+}
+.banner .container .banner-img {
+  width: 50%;
+}
+.banner .container .banner-img img {
+  width: 100%;
+}
+
+.features {
+  background-color: black;
+  overflow: hidden;
+}
+.features .container {
+  display: flex;
+}
+.features .container div {
+  width: 50%;
+}
+.features .container .features-img img {
+  width: 100%;
+}
+.features .container .features-content {
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+.features .container .features-content .icon-white {
+  width: 60px;
+  z-index: 2;
+}
+.features .container .features-content h3 {
+  font-size: 36px;
+  z-index: 2;
+}
+.features .container .features-content ul {
+  z-index: 2;
+  margin-left: 20px;
+}
+.features .container .features-content ul li {
+  font-size: 18px;
+}
+.features .container .features-content .circle {
+  position: absolute;
+  width: 400px;
+  right: -300px;
+  z-index: 1;
+  animation: round 22s infinite;
+}
+
+.new .container {
+  display: flex;
+  padding: 60px 0;
+}
+.new .container .new-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.new .container .new-content .title-bg {
+  font-size: 44px;
+  background-color: #E5E5E5;
+  padding: 15px;
+  width: 500px;
+}
+.new .container .new-content p {
+  font-size: 18px;
+  margin-right: 30px;
+}
+.new .container .new-grid {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.new .container .new-grid img {
+  width: 50%;
+  transition: all 0.5s ease;
+}
+.new .container .new-grid img:hover {
+  transform: scale(0.9);
+}
+
+.motivation {
+  background-color: #4D4D4D;
+  background-image: url(/assets/img/Applewatch2.jpeg);
+  background-position: left;
+  background-position-x: -80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.motivation .container {
+  display: flex;
+}
+.motivation .container .motivation-img {
+  width: 55%;
+  position: relative;
+}
+.motivation .container .motivation-content {
+  padding: 50px;
+  z-index: 2;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  color: white;
+}
+.motivation .container .motivation-content img {
+  width: 60px;
+}
+.motivation .container .motivation-content h3 {
+  font-size: 44px;
+}
+.motivation .container .motivation-content p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.sport {
+  padding: 100px 0;
+  background-image: url(/assets/img/Applewatch-women.jpeg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sport .container {
+  display: flex;
+}
+.sport .container div {
+  width: 50%;
+}
+.sport .container .sport-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sport .container .sport-content img {
+  width: 60px;
+}
+.sport .container .sport-content h3 {
+  font-size: 40px;
+}
+.sport .container .sport-content p {
+  font-size: 18px;
+  line-height: 25px;
+}
+.sport .container .sport-content .btn-border-grey {
+  padding: 15px 30px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  font-weight: 600;
+  width: 200px;
+}
+
+.evolution {
+  background-color: #808080;
+  background-image: url(/assets/img/Applewatch-king.jpeg);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+.evolution .container {
+  display: flex;
+}
+.evolution .container div {
+  width: 50%;
+}
+.evolution .container .evolution-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  padding-left: 50px;
+}
+.evolution .container .evolution-content img {
+  width: 60px;
+}
+.evolution .container .evolution-content h3 {
+  font-size: 44px;
+}
+
+.everyone .container {
+  display: flex;
+}
+.everyone .container .everyone-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.everyone .container .everyone-content .title-bg {
+  font-size: 44px;
+  background-color: #E5E5E5;
+  padding: 15px;
+  width: 500px;
+}
+.everyone .container .everyone-content p {
+  font-size: 18px;
+  margin-right: 30px;
+}
+.everyone .container .everyone-grid {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.everyone .container .everyone-grid img {
+  width: 35%;
+  transition: all 0.5s ease;
+}
+.everyone .container .everyone-grid img:hover {
+  transform: scale(0.9);
+}
+
+footer {
+  padding: 30px 0;
+  border-top: 1px solid grey;
+}
+footer .container {
+  text-align: center;
+}
+footer .container img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+// Mixins
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin btn {
+    padding: 15px 30px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: white;
+    background-color: $primary-color;
+    border: none;
+    font-weight: 600;
+    width: 200px;
+}
+
+@mixin section {
+    width: 1140px;
+    max-width: 1140px;
+    min-width: 1140px;
+    margin: auto;
+}
+
+
+// General configs
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $bg-body;
+}
+
+.container {
+    @include section();
+}
+
+.btn {
+    @include btn();
+    &:hover {
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+}
+
+.btn-border {
+    padding: 15px 30px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-weight: 600;
+    width: 200px;
+}
+
+.title-section {
+    text-align: center;
+    font-size: 36px;
+    color: $primary-color;
+}

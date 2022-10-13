@@ -1,0 +1,318 @@
+// Imports
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+
+// Header - START
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            img {
+                width: 60px;
+            }
+        }
+        nav {
+            ul {
+                display: flex;
+                gap: 30px;
+                list-style: none;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Header - END
+
+// BANNER - START
+.banner {
+    padding: 120px 0;
+    .container {
+        display: flex;
+        .banner-content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-right: 100px;
+            img {
+                width: 300px;
+            }
+            h1 {
+                font-size: 84px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .banner-img {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+// BANNER - END
+
+// FEATURES - START
+.features {
+    background-color: black;
+    overflow: hidden;
+    .container {
+        display: flex;
+        div {
+            width: 50%;
+        }
+        .features-img {
+            img {
+                width: 100%;
+            }
+        }
+        .features-content {
+            color: white;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+            .icon-white {
+                width: 60px;
+                z-index: 2;
+            }
+            h3 {
+                font-size: 36px;
+                z-index: 2;
+            }
+            ul {
+                z-index: 2;
+                margin-left: 20px;
+                li {
+                    font-size: 18px;
+                }
+            }
+            .circle {
+                position: absolute;
+                width: 400px;
+                right: -300px;
+                z-index: 1;
+                animation: round 22s infinite;
+            }
+        }
+    }
+}
+// FEATURES - END
+
+// NEW - START
+.new {
+    .container {
+        display: flex;
+        padding: 60px 0;
+        .new-content {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+            .title-bg {
+                font-size: 44px;
+                background-color: #E5E5E5;
+                padding: 15px;
+                width: 500px;
+            }
+            p {
+                font-size: 18px;
+                margin-right: 30px;
+            }
+        }
+        .new-grid {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 50%;
+                transition: all 0.5s ease;
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+// NEW - END
+
+// MOTIVATION - START
+.motivation {
+    background-color: #4D4D4D;
+    background-image: url(/assets/img/Applewatch2.jpeg);
+    background-position: left;
+    background-position-x: -80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .container {
+        display: flex;
+        .motivation-img {
+            width: 55%;
+            position: relative;
+        }
+        .motivation-content {
+            padding: 50px;
+            z-index: 2;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            color: white;
+            img {
+                width: 60px;
+            }
+            h3 {
+                font-size: 44px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+// MOTIVATION - END
+
+// SPORT - START
+.sport {
+    padding: 100px 0;
+    background-image: url(/assets/img/Applewatch-women.jpeg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .container {
+        display: flex;
+        div {
+            width: 50%;
+        }
+        .sport-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            img {
+                width: 60px;
+            }
+            h3 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 25px;
+            }
+            .btn-border-grey {
+                padding: 15px 30px;
+                border-radius: 0px;
+                text-transform: uppercase;
+                color: black;
+                background-color: transparent;
+                border: 2px solid black;
+                font-weight: 600;
+                width: 200px;
+            }
+        }
+    }
+}
+// SPORT - END
+
+// EVOLUTION - START
+.evolution {
+    background-color: #808080;
+    background-image: url(/assets/img/Applewatch-king.jpeg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    .container {
+        display: flex;
+        div {
+            width: 50%;
+        }
+        .evolution-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+            padding-left: 50px;
+            img {
+                width: 60px;
+            }
+            h3 {
+                font-size: 44px;
+            }
+        }
+    }
+}
+// EVOLUTION - END
+
+// EVERYONE - START
+.everyone {
+    .container {
+        display: flex;
+        .everyone-content {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+            .title-bg {
+                font-size: 44px;
+                background-color: #E5E5E5;
+                padding: 15px;
+                width: 500px;
+            }
+            p {
+                font-size: 18px;
+                margin-right: 30px;
+            }
+        }
+        .everyone-grid {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: flex-end;
+            justify-content: flex-end;
+            img {
+                width: 35%;
+                transition: all 0.5s ease;
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+// EVERYONE - END
+
+// FOOTER - START
+footer {
+    padding: 30px 0;
+    border-top: 1px solid grey;
+    .container {
+        text-align: center;
+        img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+    }
+}
+// FOOTER - END
